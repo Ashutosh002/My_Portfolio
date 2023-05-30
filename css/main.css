@@ -1,0 +1,520 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100%;
+  padding-top: 50vh;
+  padding-left: 1.5rem;
+  overflow: hidden;
+  align-items: center;
+  text-align: left;
+  background: linear-gradient(to right, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9724264706) 45%, rgba(39, 39, 39, 0.3533788515) 100%), url("../img/model.jpg") center right;
+  background-size: cover;
+}
+.home__greetings {
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 1rem;
+}
+.home__skills {
+  font-size: 0.8em;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 0.4rem;
+}
+.home .home__name {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 3.5rem;
+  padding-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+.home .home__name--last {
+  font-family: "Maven Pro", sans-serif;
+  color: rgb(0, 255, 255);
+  font-weight: 500;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger {
+  position: absolute;
+  border-radius: 5px;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: rgb(0, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: rgb(0, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: rgb(0, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger.open {
+  transform: rotate(360deg);
+  background: transparent;
+}
+.menu-btn .menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn .menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #272727;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translate(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: rgb(0, 255, 255);
+}
+.nav .menu-nav__link.active {
+  color: rgb(0, 255, 255);
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about .about__bio-image {
+  height: 75vh;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.8492647059) 0%, rgba(39, 39, 39, 0.5019257703) 100%), url("../img/model-mobile.jpg") center;
+  background-size: cover;
+  background-position: 68% 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio {
+  height: 64vh;
+  width: 90%;
+  text-align: left;
+}
+.about__bio .text-secondary {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about__bio p {
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.4rem;
+  margin-bottom: 1.1rem;
+}
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid rgb(0, 255, 255);
+}
+.about .jobs__job h2, .about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs__job h6 {
+  margin: 0.5rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  right: 0.7rem;
+  margin-bottom: 1rem;
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects {
+  padding-bottom: 2rem;
+}
+.projects .projects__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.8492647059) 0%, rgba(39, 39, 39, 0.5019257703) 100%), url("../img/model-mobile.jpg") center;
+  background-size: cover;
+  background-position: 68% 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects .text-secondary {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects .hint {
+  color: #fff;
+  font-size: 0.2em;
+  display: block;
+  text-align: center;
+  padding-top: 0.7rem;
+}
+.projects .projects__items {
+  width: 66vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.projects .projects__items__item {
+  position: relative;
+  border-bottom: 5px solid rgb(0, 255, 255);
+  overflow: hidden;
+  margin-top: 0.6rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+.projects .projects__items__item img {
+  width: 100%;
+}
+.projects .projects__items__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 255, 255);
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+.projects .projects__items__item:hover::after {
+  top: 0%;
+}
+.projects .projects__items__item:hover .projects__btn {
+  visibility: visible;
+}
+.projects .projects__items .projects__name {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.2rem;
+  text-align: left;
+  color: rgb(0, 255, 255);
+}
+.projects .projects__items .projects__name .projects__details {
+  font-family: "Nunito", sans-serif;
+  margin: 0.2rem auto;
+  display: block;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.projects__btns {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.projects__btn {
+  font-size: 2.3rem;
+  visibility: hidden;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects footer {
+  right: 0.7rem;
+  margin-bottom: 1rem;
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  padding-left: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background: linear-gradient(to right, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9724264706) 45%, rgba(39, 39, 39, 0.3533788515) 100%), url("../img/model.jpg") center right;
+  background-size: cover;
+}
+.contact h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.6rem;
+  font-size: 1.1rem;
+}
+.contact .email, .contact .phone, .contact .location {
+  margin: 0.7rem 0.2rem;
+}
+.contact .text-secondary {
+  font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .home__name--last {
+    display: block;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home, .contact {
+    background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.868872549) 27%, rgba(39, 39, 39, 0.1545868347) 100%), url("../img/model-mobile.jpg") center;
+    background-size: cover;
+    background-position: 68% 40%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about__bio p {
+    font-size: 0.8rem;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .social-icons {
+    font-size: 10px;
+  }
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translate(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .home {
+    padding-top: 42vh;
+    padding-left: 3.2rem;
+  }
+  .home__greetings {
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+  }
+  .home__skills {
+    font-size: 1.1em;
+  }
+  .home .home__name {
+    font-size: 4rem;
+  }
+  .home .home__name--last {
+    font-weight: 500;
+  }
+  .about__bio {
+    height: 50vh;
+    width: 80%;
+    text-align: center;
+  }
+  .about__bio p {
+    font-size: 1.3rem;
+  }
+  .projects .projects__items .projects__name {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .projects .projects__items .projects__name .projects__details {
+    margin: 0.5rem auto;
+    font-size: 1rem;
+  }
+  .projects .hint {
+    visibility: hidden;
+  }
+  .contact .contact__list {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .social-icons {
+    font-size: 12px;
+  }
+  .home {
+    padding-top: 42vh;
+    padding-left: 3.2rem;
+  }
+  .home__greetings {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .home__skills {
+    font-size: 1.5em;
+  }
+  .home .home__name {
+    font-size: 5rem;
+  }
+  .home .home__name--last {
+    font-weight: 500;
+  }
+  .about__bio {
+    height: 50vh;
+    width: 70%;
+    text-align: center;
+  }
+  .about__bio p {
+    font-size: 1.6rem;
+  }
+  .contact {
+    padding-top: 30vh;
+    padding-left: 4rem;
+  }
+}
+body {
+  background: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: rgb(0, 255, 255);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 8px;
+  place-items: center;
+}
+.social-icons a {
+  padding: 0.4rem;
+  transition: all 0.5s ease-in-out;
+}
+.social-icons a:hover {
+  color: rgb(0, 255, 255);
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 0;
+  text-align: right;
+  padding: 0.8rem;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

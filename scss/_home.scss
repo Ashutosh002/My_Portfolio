@@ -1,0 +1,39 @@
+.home {
+    height: 100%;
+    padding-top: 50vh;
+    padding-left: 1.5rem;
+    overflow: hidden;
+    align-items: center;
+    text-align:left;
+    background: 
+    linear-gradient(to right,rgba(39,39,39,1) 0%, rgba(39,39,39,0.9724264705882353) 45%, rgba(39,39,39,0.3533788515406162) 100%),
+    url("../img/model.jpg") center right;
+    background-size: cover;
+
+    &__greetings {
+        font-size: 1.1rem;
+        font-family: 'Roboto Mono', monospace;
+        padding-left: 1rem;
+    }
+
+    &__skills {
+        font-size: .8em;
+        font-family: 'Roboto Mono', monospace;
+        padding-left: 0.4rem;
+
+    }
+
+
+    #{&}__name {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 3.5rem;
+        padding-bottom: 3.5rem;
+        margin-top: 1rem;
+        
+        &--last {
+            font-family: 'Maven Pro', sans-serif;
+            color: $secondary-color;
+            font-weight: 500;
+        }
+    }
+  }
