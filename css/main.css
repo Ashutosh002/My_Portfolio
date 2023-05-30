@@ -411,6 +411,7 @@
   }
   .about__bio p {
     font-size: 1.3rem;
+    line-height: 1.4rem;
   }
   .projects .projects__items .projects__name {
     font-size: 1.7rem;
@@ -455,6 +456,7 @@
   }
   .about__bio p {
     font-size: 1.6rem;
+    line-height: 1.6rem;
   }
   .contact {
     padding-top: 30vh;
