@@ -167,9 +167,9 @@
   justify-content: flex-end;
 }
 .about__bio {
-  height: 64vh;
-  width: 90%;
-  text-align: left;
+  height: 80%;
+  width: 78%;
+  text-align: center;
 }
 .about__bio .text-secondary {
   font-family: "Roboto Mono", monospace;
@@ -177,7 +177,11 @@
   margin-bottom: 1rem;
 }
 .about__bio p {
-  font-size: 1rem;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05rem;
+  font-size: 95%;
   font-family: "Nunito", sans-serif;
   line-height: 1.4rem;
   margin-bottom: 1.1rem;
@@ -359,6 +363,10 @@
 }
 @media screen and (max-width: 340px) {
   .about__bio p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05rem;
     font-size: 0.8rem;
     font-family: "Nunito", sans-serif;
     line-height: 1.2rem;
@@ -412,7 +420,7 @@
     text-align: center;
   }
   .about__bio p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.4rem;
   }
   .projects .projects__items .projects__name {
@@ -457,8 +465,8 @@
     text-align: center;
   }
   .about__bio p {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
   }
   .contact {
     padding-top: 30vh;

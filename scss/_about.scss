@@ -16,9 +16,10 @@
 }
 
     &__bio {
-        height: 64vh;
-        width: 90%;
-        text-align: left;
+        height: 80%;
+        width: 78%;
+        text-align: center;
+
 
         .text-secondary {
             font-family: 'Roboto Mono', monospace;
@@ -27,7 +28,11 @@
         }
 
         p {
-            font-size: 1rem;
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            word-spacing: -0.05rem;
+            font-size: 95%;
             font-family: 'Nunito', sans-serif;
             line-height: 1.4rem;
             margin-bottom: 1.1rem;
