@@ -307,6 +307,14 @@
   color: #000;
   transition: all 0.5s ease-in-out;
 }
+.projects__btn svg, .projects__btn path {
+  height: 2.3rem;
+  width: 2.3rem;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn svg:hover path {
+  fill: #fff;
+}
 .projects__btn:hover {
   color: #fff;
 }

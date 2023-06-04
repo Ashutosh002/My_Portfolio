@@ -106,6 +106,17 @@
         color: #000;
         @include transition-ease;
 
+        svg, path{
+            height: 2.3rem;
+            width: 2.3rem;
+            @include transition-ease;
+
+        }
+
+        svg:hover path {
+            fill:#fff
+        }
+        
         &:hover {
             color: #fff;
         }
