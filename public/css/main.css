@@ -11,7 +11,7 @@
   overflow: hidden;
   align-items: center;
   text-align: left;
-  background: linear-gradient(to right, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9724264706) 45%, rgba(39, 39, 39, 0.3533788515) 100%), url("../img/model.jpg") center right;
+  background: linear-gradient(to right, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9724264706) 45%, rgba(39, 39, 39, 0.3533788515) 100%), url("../../img/model.jpg") center right;
   background-size: cover;
 }
 .home__greetings {
@@ -32,7 +32,7 @@
 }
 .home .home__name--last {
   font-family: "Maven Pro", sans-serif;
-  color: rgb(0, 255, 255);
+  color: rgb(158, 213, 255);
   font-weight: 500;
 }
 
@@ -52,7 +52,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: rgb(0, 255, 255);
+  background: rgb(158, 213, 255);
   transition: all 0.5s ease-in-out;
 }
 .menu-btn .menu-btn__burger::before {
@@ -62,7 +62,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: rgb(0, 255, 255);
+  background: rgb(158, 213, 255);
   transition: all 0.5s ease-in-out;
 }
 .menu-btn .menu-btn__burger::after {
@@ -72,7 +72,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: rgb(0, 255, 255);
+  background: rgb(158, 213, 255);
   transition: all 0.5s ease-in-out;
 }
 .menu-btn .menu-btn__burger.open {
@@ -130,10 +130,10 @@
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
-  color: rgb(0, 255, 255);
+  color: rgb(158, 213, 255);
 }
 .nav .menu-nav__link.active {
-  color: rgb(0, 255, 255);
+  color: rgb(158, 213, 255);
 }
 
 .menu-nav__item:nth-child(1) {
@@ -158,7 +158,7 @@
 .about .about__bio-image {
   height: 75vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(39, 39, 39, 0.8492647059) 0%, rgba(39, 39, 39, 0.5019257703) 100%), url("../img/model-mobile.jpg") center;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.8492647059) 0%, rgba(39, 39, 39, 0.5019257703) 100%), url("../../img/model-mobile.jpg") center;
   background-size: cover;
   background-position: 68% 40%;
   display: flex;
@@ -196,7 +196,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid rgb(0, 255, 255);
+  border-bottom: 5px solid rgb(158, 213, 255);
 }
 .about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.5rem 0;
@@ -220,7 +220,7 @@
 .projects .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(39, 39, 39, 0.8492647059) 0%, rgba(39, 39, 39, 0.5019257703) 100%), url("../img/model-mobile.jpg") center;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.8492647059) 0%, rgba(39, 39, 39, 0.5019257703) 100%), url("../../img/model-mobile.jpg") center;
   background-size: cover;
   background-position: 68% 31%;
   display: flex;
@@ -249,7 +249,7 @@
 }
 .projects .projects__items__item {
   position: relative;
-  border-bottom: 5px solid rgb(0, 255, 255);
+  border-bottom: 5px solid rgb(158, 213, 255);
   overflow: hidden;
   margin-top: 0.6rem;
   margin-bottom: 4rem;
@@ -265,7 +265,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(0, 255, 255);
+  background: rgb(158, 213, 255);
   opacity: 0.7;
   transition: all 0.5s ease-in-out;
 }
@@ -280,7 +280,7 @@
   font-family: "Maven Pro", sans-serif;
   font-size: 1.2rem;
   text-align: left;
-  color: rgb(0, 255, 255);
+  color: rgb(158, 213, 255);
 }
 .projects .projects__items .projects__name .projects__details {
   font-family: "Nunito", sans-serif;
@@ -336,7 +336,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  background: linear-gradient(to right, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9724264706) 45%, rgba(39, 39, 39, 0.3533788515) 100%), url("../img/model.jpg") center right;
+  background: linear-gradient(to right, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9724264706) 45%, rgba(39, 39, 39, 0.3533788515) 100%), url("../../img/model.jpg") center right;
   background-size: cover;
 }
 .contact h1 {
@@ -364,7 +364,7 @@
 }
 @media screen and (max-width: 900px) {
   .home, .contact {
-    background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.868872549) 27%, rgba(39, 39, 39, 0.1545868347) 100%), url("../img/model-mobile.jpg") center;
+    background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.868872549) 27%, rgba(39, 39, 39, 0.1545868347) 100%), url("../../img/model-mobile.jpg") center;
     background-size: cover;
     background-position: 68% 40%;
   }
@@ -499,7 +499,7 @@ a {
 }
 
 .text-secondary {
-  color: rgb(0, 255, 255);
+  color: rgb(158, 213, 255);
 }
 
 header {
@@ -526,7 +526,7 @@ main {
   transition: all 0.5s ease-in-out;
 }
 .social-icons a:hover {
-  color: rgb(0, 255, 255);
+  color: rgb(158, 213, 255);
 }
 
 footer {
