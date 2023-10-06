@@ -1,65 +1,76 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .home__name--last {
         display: block;
     }
 }
 
-@media screen and (max-width: 900px){
-    .home, .contact {
-        background: 
-        linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(39,39,39,0.8688725490196079) 27%, rgba(39,39,39,0.15458683473389356) 100%),
-        url("../../img/model-mobile.jpg") center;
+@media screen and (max-width: 900px) {
+    .home,
+    .contact {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(39, 39, 39, 1) 0%,
+                rgba(39, 39, 39, 0.8688725490196079) 27%,
+                rgba(39, 39, 39, 0.15458683473389356) 100%
+            ),
+            url("../../img/model-mobile.jpg") center;
         background-size: cover;
         background-position: 68% 40%;
+    }
+
+    .jobs__job {
+        flex-direction: column;
+        text-align: center;
+
     }
 }
 
 @include media-lowEnd {
     .about__bio {
-            p {
-                text-align: justify;
-                hyphens: auto;
-                -webkit-hyphens: auto;
-                word-spacing: -0.05rem;
-                font-size: .8rem;
-                font-family: 'Nunito', sans-serif;
-                line-height: 1.2rem;
-                margin-bottom: 1rem;
-            }
+        p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            word-spacing: -0.05rem;
+            font-size: 0.8rem;
+            font-family: "Nunito", sans-serif;
+            line-height: 1.2rem;
+            margin-bottom: 1rem;
+        }
     }
 }
 
 @include media-md {
-
     main {
         .social-icons {
             font-size: 10px;
         }
     }
-      
+
     .menu-btn {
-      visibility: hidden;  
+        visibility: hidden;
     }
 
     .nav {
         visibility: visible;
 
-      .menu-nav {
-        display: block;
-        transform: translate(0);
-        height: 100%;
-        background: transparent;
-        text-align: right;
+        .menu-nav {
+            display: block;
+            transform: translate(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
 
-        &__item {
-            display: inline;
-            padding-right: 1.5rem;
-        }
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
 
-        &__link {
-            font-size: 1.5rem;
+            &__link {
+                font-size: 1.5rem;
+            }
         }
-      }  
     }
 
     .home {
@@ -70,14 +81,14 @@
             font-size: 1.1rem;
             padding-left: 1.5rem;
         }
-    
+
         &__skills {
             font-size: 1.1em;
         }
 
         #{&}__name {
             font-size: 4rem;
-            
+
             &--last {
                 font-weight: 500;
             }
@@ -85,7 +96,7 @@
     }
 
     .about__bio {
-        height: 50vh;
+        height: 100vh;
         width: 80%;
         text-align: center;
 
@@ -96,13 +107,13 @@
     }
 
     .projects {
-        #{&}__items{
+        #{&}__items {
             .projects__name {
                 font-size: 1.7rem;
-                text-align: center; 
-                
+                text-align: center;
+
                 .projects__details {
-                    margin: .5rem auto;
+                    margin: 0.5rem auto;
                     font-size: 1rem;
                 }
             }
@@ -119,7 +130,6 @@
 }
 
 @include media-lg {
-
     main {
         .social-icons {
             font-size: 12px;
@@ -134,14 +144,14 @@
             font-size: 1.5rem;
             padding-left: 1.5rem;
         }
-    
+
         &__skills {
             font-size: 1.5em;
         }
 
         #{&}__name {
             font-size: 5rem;
-            
+
             &--last {
                 font-weight: 500;
             }
@@ -152,13 +162,13 @@
         height: 50vh;
         width: 70%;
         text-align: center;
-
+        position: relative;
+        top: -5rem;
         p {
             font-size: 1.4rem;
             line-height: 1.7rem;
         }
     }
-
 
     .contact {
         padding-top: 30vh;

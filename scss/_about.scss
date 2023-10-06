@@ -16,10 +16,13 @@
 }
 
     &__bio {
-        height: 80%;
+        height: 100%;
         width: 78%;
         text-align: center;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
 
         .text-secondary {
             font-family: 'Roboto Mono', monospace;
@@ -50,9 +53,12 @@
 
         &__job {
             background: lighten($primary-color, 10%);
-            padding: 0.5rem;
+            padding: 1rem;
             border-bottom: 5px solid $secondary-color;
-
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.5rem;
             h2, h3 {
                 margin: 0.5rem 0;
             }

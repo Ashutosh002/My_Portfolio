@@ -167,9 +167,13 @@
   justify-content: flex-end;
 }
 .about__bio {
-  height: 80%;
+  height: 100%;
   width: 78%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .about__bio .text-secondary {
   font-family: "Roboto Mono", monospace;
@@ -195,8 +199,12 @@
 }
 .about .jobs__job {
   background: #414141;
-  padding: 0.5rem;
+  padding: 1rem;
   border-bottom: 5px solid rgb(158, 213, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
 }
 .about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.5rem 0;
@@ -363,10 +371,15 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .home, .contact {
+  .home,
+  .contact {
     background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.868872549) 27%, rgba(39, 39, 39, 0.1545868347) 100%), url("../../img/model-mobile.jpg") center;
     background-size: cover;
     background-position: 68% 40%;
+  }
+  .jobs__job {
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media screen and (max-width: 340px) {
@@ -423,7 +436,7 @@
     font-weight: 500;
   }
   .about__bio {
-    height: 50vh;
+    height: 100vh;
     width: 80%;
     text-align: center;
   }
@@ -471,6 +484,8 @@
     height: 50vh;
     width: 70%;
     text-align: center;
+    position: relative;
+    top: -5rem;
   }
   .about__bio p {
     font-size: 1.4rem;
