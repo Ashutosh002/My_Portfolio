@@ -359,10 +359,12 @@
   font-size: 1.1rem;
 }
 .contact .email, .contact .phone, .contact .location {
-  margin: 0.7rem 0.2rem;
+  margin-left: 0.3rem;
+  font-family: "Roboto Mono", monospace;
 }
 .contact .text-secondary {
   font-family: "Nunito", sans-serif;
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 1200px) {

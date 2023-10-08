@@ -25,10 +25,12 @@
     }
 
     .email, .phone, .location {
-        margin: .7rem .2rem;
+        margin-left: .3rem;
+        font-family: 'Roboto Mono', monospace;
     }
 
     .text-secondary {
         font-family: 'Nunito', sans-serif;
+        margin-top: .5rem;
     }
   }
